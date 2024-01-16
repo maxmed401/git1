@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .all{
+            border: 1px solid red;
+            width: 1600px;
+            height: auto;
+        }     
+        .h1{
+            display: grid;
+            height: 400px;
+            width: 1600px;
+            background-color: pink;
+            align-items: center;
+            justify-content: center;
+        }
+        .h2{
+            display: grid;
+            height: 200px;
+            width: 1000px;
+            background-color: white;
+            align-items: center;
+            justify-content: center;
+        }
+        .h3{
+            display: grid;
+            height: 100px;
+            width: 500px;
+            background-color: black;
+            align-items: center;
+            justify-content: center;
+        }      
+        .m1{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            width: 1600px;
+            height: 300px;
+            background-color: gray;
+            align-items: center ;
+            justify-content: center;
+        }
+        .m2{
+           height: 250px;
+           width: 400px;
+           background-color: red; 
+        }
+        .m3{
+        
+           height: 250px;
+           width: 400px;
+           background-color: orange; 
+        }
+        .m4{
+        
+           height: 250px;
+           width: 400px;
+           background-color: aqua; 
+        }
+        .m5{
+            
+           height: 250px;
+           width: 400px;
+           background-color: yellow; 
+        }
+        footer{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center ;
+            justify-content: center;
+
+        }
+        .f1 {
+    display: grid;
+    grid-template-areas:
+        "f11 f11"
+        "f12 f13";
+    height: 500px;
+    width: 533.33px;
+    background-color: green;
+    justify-content: center;
+    align-items: flex-end ;
+    gap: 0;
+}
+
+.f11 {
+    grid-area: f11;
+    width: 250px;
+    height: 50px;
+    background-color: orange;
+    
+}
+
+.f12 {
+    grid-area: f12;
+    height: 300px;
+    width: 125px;
+    background-color: pink;
+    
+}
+
+.f13 {
+    grid-area: f13;
+    height: 300px;
+    width: 125px;
+    background-color: yellow;
+    
+}
+        .f2{
+            display: grid;
+            height: 500px;
+            width: 533.33px;
+            background-color: aqua;
+            gap: 0;
+            grid-template-areas:
+        "f21 f22 f25";
+            align-items: flex-end ;
+            justify-content: center;
+        }
+        .f21{
+            grid-area: f21;
+            height: 300px;
+            width: 177.7px;
+            background-color: red;
+        }
+        .f22{
+            display: grid;
+            grid-area: f22;
+            height: 300px;
+            width: 177.7px;
+            background-color: yellow;
+            grid-template-areas:
+            "f23 f24";
+            align-items: flex-end ;
+            justify-content: center;
+        }
+        .f23{
+            width: 88.8px;
+            height: 250px;
+            background-color: orange;
+        }
+        .f24{
+            width: 88.8px;
+            height: 100px;
+            background-color: red;
+        }
+        .f25{
+            grid-area: f25;
+            height: 300px;
+            width: 177.7px;
+            background-color: orange;
+        }
+        .f3{
+            display: grid;
+            height: 500px;
+            width: 533.33px;
+            background-color: blue;
+        }
+        .f31{
+            height: 166.6px;
+            width: 177.7px;
+            background-color: orange;
+            place-self: center end;
+        }
+        .f32{
+            height: 166.6px;
+            width: 177.7px;
+            background-color: yellow;
+            place-self: start center;
+        }
+        .f33{
+            height: 166.6px;
+            width: 177.7px;
+            background-color: aqua;
+             place-self: start;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+    <head>
+        <div class="h1"><div class="h2"><div class="h3"></div></div></div>
+    </head>
+    <main>
+        <div class="m1"> 
+            <div class="m2"></div>
+            <div class="m3"></div>
+            <div class="m4"></div>
+            <div class="m5"></div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="f1">
+            <div class="f11"></div>
+            <div class="f12"></div>
+            <div class="f13"></div>
+        </div>
+        <div class="f2">
+            <div class="f21"></div>
+            <div class="f22">
+                <div class="f23"></div>
+                <div class="f24"></div>
+            </div>
+            <div class="f25"></div>
+        </div>
+        <div class="f3">
+            <div class="f31"></div>
+            <div class="f32"></div>
+            <div class="f33"></div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
