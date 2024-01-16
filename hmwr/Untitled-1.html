@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input,
+        section,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+           transition: 1s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="cfpassword">Повторіть пароль:</label>
+        <input type="password" id="cfpassword" name="cfpassword" required><br>
+
+        <label for="born">Дата народження:</label>
+        <input type="date" id="born" name="born" required><br>
+
+        <label for="gender">Стать:</label>
+        <select id="gender" name="gender">
+            <option value="man">Чоловік</option>
+            <option value="woman">Жінка</option>
+        </select>
+        
+        <label for="age">Вік:</label>
+        <input type="number" id="age" name="age" required><br>
+
+        <label for="description">Опис:</label>
+        <textarea id="description" name="description" rows="4"></textarea>
+
+        <button type="submit">Відправити</button>
+
+    </form>
+</body>
+</html>

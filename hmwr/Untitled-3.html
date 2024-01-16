@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+
+    <h1>Форма-фільтр</h1>
+
+    <form>
+        <label for="productType">Тип продукту:</label>
+        <select id="productType" name="productType">
+            <option value="phone">Телефон</option>
+            <option value="laptop">Ноутбук</option>
+            <option value="vacuum">Пилесос</option>
+            <option value="charger">Зарядка</option>
+        </select><br>
+
+        <label>Потужність:</label><br>
+        <label><input type="checkbox" name="power" value="">15W</label><br>
+        <label><input type="checkbox" name="power" value="">25W</label><br>
+        <label><input type="checkbox" name="power" value="">65W</label><br>
+        <label><input type="checkbox" name="power" value="">100W</label><br>
+        <label><input type="checkbox" name="power" value="">200W</label><br>
+
+        <label>Марка:</label><br>
+        <label><input type="checkbox" name="brand" value="samsung"> Samsung</label><br>
+        <label><input type="checkbox" name="brand" value="lg"> LG</label><br>
+        <label><input type="checkbox" name="brand" value="asus"> Asus</label><br>
+        <label><input type="checkbox" name="brand" value="lenovo"> Lenovo</label><br>
+
+        <label for="sorting">Сортування:</label>
+        <select id="sorting" name="sorting">
+            <option value="cheap">Від дешевих</option>
+            <option value="expensive">Від дорогих</option>
+            <option value="rating">По рейтингу</option>
+        </select><br>
+
+        <label for="modelName">Назва моделі:</label>
+        <input type="text" id="modelName" name="modelName"><br>
+
+        <button type="submit">Фільтрувати</button>
+    </form>
+    </form>
+
+</body>
+</html>
