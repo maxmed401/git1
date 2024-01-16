@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        thead{
+            display: flex;
+         position: relative;
+        }
+        .h1{
+            height: 200px;
+            width: 1920px;
+            background-color: pink;
+            z-index: 1;
+        }
+        .h2{
+            
+            z-index: 2;
+            left: 155px;
+            top: 30px;
+            position: absolute;
+            height:150px ;
+            width: 1240px;
+            background-color: white;
+        }
+        .h3{
+            position: absolute;
+            height: 100px;
+            width: 720px;
+            background-color: black;
+            z-index: 3;
+            left: 250px;
+            top: 25px;
+        }
+        main{
+            display: flex;
+         position: relative; 
+        }
+        .m1{
+            height: 200px;
+            width: 1600px;
+            background-color: gray;
+            z-index: 1;
+        }
+        .m2{
+            z-index: 2;
+            position: absolute;
+            top: 20px;
+            left: 15px;
+            height:150px ;
+            width: 375px;
+            background-color: red;
+        }
+        .m3{
+            z-index: 3;
+            position: absolute;
+            top: 20px;
+            left: 390px;
+            height:150px ;
+            width: 375px;
+            background-color: orange;
+        }
+        .m4{
+            z-index: 4;
+            position: absolute;
+            top: 20px;
+            left: 765px;
+            height:150px ;
+            width: 375px;
+            background-color: aqua;
+        }
+        .m5{
+            z-index: 5;
+            position: absolute;
+            top: 20px;
+            left: 1140px;
+            height:150px ;
+            width: 375px;
+            background-color: yellow;
+        }
+        tfoot{
+            display: flex;
+            position: relative;
+        }
+        .f1{
+            position: absolute;
+            z-index: 1;
+            height: 500px;
+            width: 510px;
+            background-color: green;
+        }
+        .f2{
+            position: absolute;
+            z-index: 2;
+            left: 510px;
+            height: 500px;
+            width: 510px;
+            background-color: aqua;
+        }
+        .f3{
+            position: absolute;
+            z-index: 3;
+            left: 1020px;
+            height: 500px;
+            width: 510px;
+            background-color: blue;
+        }
+        .f11{
+            height: 60px;
+            width: 300px;
+            position: absolute;
+            background-color: orange;
+            left: 110px;
+            top: 60px;
+        }
+        .f12{
+            height: 300px;
+            width: 150px;
+            position: absolute;
+            background-color: pink;
+            left: 110px;
+            top: 120px;
+        }
+        .f13{
+            height: 300px;
+            width: 150px;
+            position: absolute;
+            background-color: yellow;
+            left: 260px;
+            top: 120px;
+        }
+        .f21{
+            height: 300px;
+            width: 166.66px;
+            position: absolute;
+            background-color: red;
+            top: 60px;
+        }
+        .f22{
+            position: absolute;
+            height: 500px;
+            width: 166.66px;
+            background-color: yellow;
+            top: 60px;
+            left: 166.66px;
+        }
+        .f23{
+            height: 300px;
+            width: 83.3px;
+            position: absolute;
+            background-color: orange;
+            left: 166.66px;
+            top: 120px;
+        }
+        .f24{
+            height: 300px;
+            width: 83.3px;
+            position: absolute;
+            background-color: red;
+            left: 249.96px;
+            top: 240px;
+        }
+        .f25{
+            position: absolute;
+            height: 500px;
+            width: 178px;
+            background-color: orange;
+            top: 60px;
+            left: 333.3px;  
+        }
+        .f31{
+            position: absolute;
+            height: 200px;
+            width: 167px;
+            background-color: aqua; 
+            top: 240px;
+        }
+        .f32{
+            position: absolute;
+            height: 200px;
+            width: 167px;
+            background-color: yellow; 
+            top: 180px;
+            left: 167px;;
+        }
+        .f33{
+            position: absolute;
+            height: 200px;
+            width: 167px;
+            background-color: orange; 
+            top: 120px;
+            left: 334px;
+        }
+    </style>
+</head>
+<body>
+    <thead><div class="h1">
+        <div class="h2">
+        <div class="h3">
+        </div>
+        </div>
+        </div>
+    </thead>
+    <main>
+        <div class="m1"></div>
+        <div class="m2"></div>
+        <div class="m3"></div>
+        <div class="m4"></div>
+        <div class="m5"></div>
+    </main>
+    <tfoot>
+        <div class="f1">
+            <div class="f11"></div>
+            <div class="f12"></div>
+            <div class="f13"></div>
+        </div>
+        <div class="f2">
+            <div class="f21"></div>
+            <div class="f22"></div>
+            <div class="f23"></div>
+            <div class="f24"></div>
+            <div class="f25"></div>
+        </div>
+        <div class="f3">
+            <div class="f31"></div>
+            <div class="f32"></div>
+            <div class="f33"></div>
+        </div>
+    </tfoot>
+</body>
+</html>

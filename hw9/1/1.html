@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rel{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            position: relative;
+            top: 40px; left: 40px;
+        }
+        .abs{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            position: absolute;
+            top: 35px; left: 145px;
+        }
+        .fx{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            position: fixed;
+            top: 25px; left: 245px;
+            z-index: 2;
+        }
+        .ss{
+            margin-top: 50px;
+        }
+       table, tr, th,td{
+            border: 1px solid black;
+        }
+        tr, th,td{
+            padding: 10px;
+        }
+        thead > tr{
+            background-color: red;
+        }
+        tbody>tr{
+            background-color: green;
+        }
+        tfoot>tr{
+            background-color: blue;
+        }
+        .container{
+            margin: 20px;
+        }
+        .v1{
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            background-color: red;
+            margin: 20px;
+        }
+        .v2{
+            
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+        }
+        .block{
+            height: 40px;
+            width: 40px;
+            background-color: purple;
+        }
+        .line{
+            color: aqua;
+            height: auto;
+            width: auto;
+            background-color: black;
+        }
+        nav a {
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        p{
+            font-family:Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1 -->
+    <h3 id="1">1</h3>
+    <div class="rel"></div>
+    <div class="abs"></div>
+    <div class="fx"></div>
+    <hr class="ss">
+    <!-- 2 -->
+    <h3 id="2">2</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>1</th>
+                <th>1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">3</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr class="ss">
+    <!-- 3 -->
+    <h3 id="3">3</h3>
+    <div class="container">
+        <div class="v1"></div>
+        <div class="v2"></div>
+    </div>
+<hr class="ss">
+<!-- 4 -->
+<h3 id="4">4</h3>
+<div class="block"></div>
+<span class="line">sss</span>
+<hr class="ss">
+<!-- 5 -->
+<h3 id="5">5</h3>
+<video src="./video.mp4" height="200px" width="300px" controls loop ></video>
+<img src="./img.jpg" alt="" height="200px" width="300px">
+<audio src="./audio.mp3" controls></audio>
+<hr class="ss">
+<!-- 6 -->
+<h3 id="6">6</h3>
+<nav>
+<a href="#1">1st</a><br>
+<a href="#2">2nd</a><br>
+<a href="#3">3rd</a><br>
+<a href="#4">4th</a><br>
+<a href="#5">5th</a><br>
+<a href="#6">6th</a><br>
+<a href="#7">7th</a><br>
+</nav>
+<hr class="ss">
+<!-- 7 -->
+<h3 id="7">7</h3>
+<p>
+    ssssssssssss
+ssssssssssssssssssssssssssss
+</p>
+</body>
+</html>
